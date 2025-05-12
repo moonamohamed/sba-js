@@ -3,7 +3,7 @@ const CourseInfo = {
   id: 451,
   name: "Introduction to JavaScript"
 };
-// missing if,try,
+// missing if,try, eadme discrption -10 =-22 =78=>88
 // The provided assignment group.
 const AssignmentGroup = {
   id: 12345,
@@ -99,8 +99,13 @@ console.log(unique_elements)
 
 let unique_student = []
 for(let i = 0; i < unique_elements.length; i++) {
-let obj = {id: unique_elements[i]} 
-unique_student.push(obj)
+  try {
+    
+    let obj = {id: unique_elements[i]} 
+    unique_student.push(obj)
+  } catch (error) {
+    
+  }
 
 
 }
